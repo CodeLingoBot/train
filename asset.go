@@ -143,7 +143,7 @@ var mapAlterExtensions = map[string]string{
 	".coffee": ".js",
 }
 
-// Find possible asset files.
+// ResolvePath: Find possible asset files.
 // url = javascripts/asset.js
 // if url exist
 // => javascript/asset.js

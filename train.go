@@ -19,7 +19,7 @@ func SetFileServer() {
 	}
 }
 
-// setting serveMux to nil will use http.DefaultServeMux instead.
+// ConfigureHttpHandler: setting serveMux to nil will use http.DefaultServeMux instead.
 func ConfigureHttpHandler(serveMux *http.ServeMux) {
 	if serveMux == nil {
 		serveMux = http.DefaultServeMux
@@ -32,7 +32,7 @@ func ConfigureHttpHandler(serveMux *http.ServeMux) {
 	}))
 }
 
-// use train.ServeRequest(w, r) to server a request manually.
+// ServeRequest: use train.ServeRequest(w, r) to server a request manually.
 func ServeRequest(w http.ResponseWriter, r *http.Request) {
 	server(w, r)
 }
